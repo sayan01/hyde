@@ -1,4 +1,4 @@
 <h1>Preview:</h1>
 @if(html_sync.get()){
-    <div class="ck-content preview" [innerHTML]="html_sync.get()"></div>
+    <div class="ck-content preview" [innerHTML]="html_sync.get() | safeHtml"></div>
 }

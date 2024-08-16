@@ -7,12 +7,14 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { FormsModule } from '@angular/forms';
 import { EditorRoutingModule } from './editor-routing.module';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { SafeHtmlPipe } from '../safe-html.pipe';
 
 @NgModule({
   declarations: [
     EditorPageComponent,
     EditorComponent,
     EditorPreviewComponent,
+    SafeHtmlPipe,
   ],
   imports: [
     CommonModule,

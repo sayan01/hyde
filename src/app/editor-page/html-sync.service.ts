@@ -19,10 +19,6 @@ allowedAttributes['img'] = (allowedAttributes['img'] || []).concat([
   'loading',
 ]);
 
-allowedAttributes['figure'] = (allowedAttributes['figure'] || []).concat([
-  'style',
-]);
-
 const allowedTags = [
   ...sanitizeHtml.defaults.allowedTags,
   'img',
