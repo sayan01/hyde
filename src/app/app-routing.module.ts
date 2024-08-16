@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { EditorPageComponent } from './editor-page/editor-page.component';
 import { HomeComponent } from './home.component';
+
+/**
+ * The routes of the application.
+ * 
+ * Editor Route is lazily loaded.
+ * 
+ * Preloading is enabled for all modules.
+ */
 
 const routes: Routes = [
   {

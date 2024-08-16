@@ -6,8 +6,16 @@ import { CommonModule } from '@angular/common';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { FormsModule } from '@angular/forms';
 import { EditorRoutingModule } from './editor-routing.module';
-import { RouterModule, RouterOutlet } from '@angular/router';
 import { SafeHtmlPipe } from '../safe-html.pipe';
+
+/**
+ * Editor Module
+ * Components for the editor page:
+ * - EditorPageComponent
+ *     L EditorComponent - wrapper on CKEditor
+ *     L EditorPreviewComponent - displays the HTML preview
+ * The html is shared using the HtmlSyncService injection
+ */
 
 @NgModule({
   declarations: [

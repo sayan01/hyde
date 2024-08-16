@@ -1,6 +1,17 @@
 import { Component, inject, input } from '@angular/core';
 import { HtmlSyncService } from '../html-sync.service';
 
+/**
+ * Editor preview component
+ * Displays the HTML preview
+ * The html is shared using the HtmlSyncService injection
+ * The HTML is sanitized using the sanitizeHtml library.
+ * 
+ * The safeHtml pipe is used to trust the HTML.
+ * 
+ * The sanitized and trusted HTML is set as the inner HTML of the div.
+ */
+
 @Component({
   selector: 'app-editor-preview',
   templateUrl: './editor-preview.component.html',

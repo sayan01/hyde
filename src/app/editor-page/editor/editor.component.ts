@@ -81,6 +81,21 @@ import {
 } from 'ckeditor5';
 import { HtmlSyncService } from '../html-sync.service';
 
+/**
+ * Editor Component
+ * CKEditor component for the editor page
+ * Uses the CKEditor Angular component
+ * The editor configuration is set in the ngAfterViewInit lifecycle hook
+ * The editor content is shared using the HtmlSyncService injection
+ * The editor's html is two-way bound to the `html` signal,
+ * which is initially set to the html content from the service
+ * in the lifecycle hook ngAfterViewInit.
+ * 
+ * SimpleImageUploadAdapter is used to upload images to the server.
+ * The uploadUrl is set to 'http://localhost:5000/upload' as a dummy
+ * server endpoint. The withCredentials option is set to false to
+ * allow cross-origin requests temporarily.
+ */
 
 @Component({
   selector: 'app-editor',
