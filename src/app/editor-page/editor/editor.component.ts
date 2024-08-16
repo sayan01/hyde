@@ -1,6 +1,5 @@
 import { ChangeDetectorRef, Component, ViewEncapsulation, ElementRef, ViewChild, signal, output, input, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CKEditorModule, ChangeEvent } from '@ckeditor/ckeditor5-angular';
+import { ChangeEvent } from '@ckeditor/ckeditor5-angular';
 
 import {
 	ClassicEditor,
@@ -80,7 +79,6 @@ import {
 	Undo,
 	type EditorConfig
 } from 'ckeditor5';
-import { FormsModule } from '@angular/forms';
 import { HtmlSyncService } from '../html-sync.service';
 
 

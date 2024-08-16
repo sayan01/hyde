@@ -5,8 +5,8 @@ import { EditorPreviewComponent } from './editor-preview/editor-preview.componen
 import { CommonModule } from '@angular/common';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { FormsModule } from '@angular/forms';
-import { Editor } from 'ckeditor5';
-
+import { EditorRoutingModule } from './editor-routing.module';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,6 +18,7 @@ import { Editor } from 'ckeditor5';
     CommonModule,
     CKEditorModule,
     FormsModule,
+    EditorRoutingModule,
   ],
   exports: [
     EditorPageComponent,
