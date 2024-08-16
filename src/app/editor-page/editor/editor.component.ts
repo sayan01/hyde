@@ -86,8 +86,6 @@ import { HtmlSyncService } from '../html-sync.service';
 
 @Component({
   selector: 'app-editor',
-  standalone: true,
-  imports: [CommonModule, CKEditorModule, FormsModule],
   templateUrl: './editor.component.html',
   styleUrl: './editor.component.scss',
   encapsulation: ViewEncapsulation.None
