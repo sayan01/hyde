@@ -1,6 +1,8 @@
 import { Component, inject, input } from '@angular/core';
 import { HtmlSyncService } from '../html-sync.service';
 
+import 'https://www.wiris.net/demo/plugins/app/WIRISplugins.js?viewer=image';
+
 /**
  * Editor preview component
  * Displays the HTML preview
@@ -11,6 +13,7 @@ import { HtmlSyncService } from '../html-sync.service';
  * 
  * The sanitized and trusted HTML is set as the inner HTML of the div.
  */
+
 
 @Component({
   selector: 'app-editor-preview',

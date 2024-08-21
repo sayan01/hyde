@@ -8,6 +8,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
+First build the custom CKEditor
+- `cd ckeditor5`
+- `npm i`
+- `npm run build`
+
+Then run the project
+- `cd ..`
+- `npm i`
+- `ng serve`
+
+Subsequent runs only need to run `ng serve`
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Image Upload Backend

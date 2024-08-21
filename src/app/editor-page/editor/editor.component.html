@@ -1,17 +1,14 @@
-<div>
+<div class=editor>
     <h1>Editor:</h1>
 	<div class="main-container">
 		<div class="editor-container editor-container_classic-editor editor-container_include-style" #editorContainerElement>
 			<div class="editor-container__editor">
 				<div #editorElement>
-                    @if(isLayoutReady){
-					<ckeditor 
-                        [(ngModel)]="html" 
-                        [editor]="Editor" 
-                        [config]="config"
+					<ckeditor
+                        [(ngModel)]="html"
+                        [editor]="Editor"
                         (change)="onChange($event)"
                     />
-                    }
 				</div>
 			</div>
 		</div>
