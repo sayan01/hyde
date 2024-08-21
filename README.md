@@ -9,12 +9,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 First build the custom CKEditor
-- `cd ckeditor5`
-- `npm i`
-- `npm run build`
+- `npm run ckeditor`
 
 Then run the project
-- `cd ..`
 - `npm i`
 - `ng serve`
 

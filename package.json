@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "ckeditor": "cd ckeditor5; npm i; npm run build",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
